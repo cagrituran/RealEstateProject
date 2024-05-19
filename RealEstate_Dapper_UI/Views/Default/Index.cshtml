@@ -4,4 +4,13 @@
     Layout = "~/Views/Shared/_DefaultLayout.cshtml";
 }
 
-<h2>Ana Sayfa</h2>
+@await Component.InvokeAsync("_DefaultFeatureComponentPartial")
+
+@await Component.InvokeAsync("_DefaultHomePageProductList")
+
+@await Component.InvokeAsync("_DefaultWhoWeAreComponentPartial")
+
+@await Component.InvokeAsync("_DefaultServicesComponentPartial")
+
+@await Component.InvokeAsync("_DefaultProductListExploreCitiesComponentPartial")
+                            
